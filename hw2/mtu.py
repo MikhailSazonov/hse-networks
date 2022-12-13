@@ -40,7 +40,7 @@ except:
 	print('Unknown host.')
 	exit(0)
 
-code = os.system("ping -c 1 -M do -s 1 " + sys.argv[1] + ' > /dev/null 2> /dev/null')
+code = os.system("ping -c 1 -M do -s 0 " + sys.argv[1] + ' > /dev/null 2> /dev/null')
 
 if code:
 	print('ICMP is banned, exit...')
